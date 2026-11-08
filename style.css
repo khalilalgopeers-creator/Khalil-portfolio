@@ -1,0 +1,163 @@
+/* Basic, clean styling for HTML portfolio structure */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Navigation bar */
+.nav {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eee;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.nav a:hover,
+.nav a.active {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* Headings & Text */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #e456;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #e45;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #e99;
+}
+
+p {
+  margin-bottom: 15px;
+  font: italic;
+  color: #e71;
+}
+
+ul, ol {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  color: #429;
+}
+
+li {
+  margin-bottom: 8px;
+  color: color(srgb red green blue);
+}
+
+a {
+  border-style:solid;
+  border-color:red;
+  border-radius: 10px;
+  padding:8px;
+  background-color: aquamarine;
+  color: darkblue;
+
+}
+
+/* Sections & Cards */
+.section {
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  color: color-mix(red, 55%, 60%);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  color: #429;
+
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #429;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #004c99;
+}
+img{
+  width: 300px;
+  border-spacing:4px;
+  border-color:#004c99 ;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}
