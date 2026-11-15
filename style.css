@@ -178,12 +178,22 @@ body::after {
   border-radius: var(--radius-sm);
   background-color: transparent;
   white-space: nowrap;
-  transition: color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+  display: inline-block;
+  transition:
+    color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav a:hover {
   color: var(--accent-hover);
   background-color: var(--accent-soft);
+  transform: scale(1.05);
+}
+
+.nav a:active {
+  transform: scale(0.98);
 }
 
 .nav a.active {
@@ -195,6 +205,7 @@ body::after {
 .nav a.active:hover {
   background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
   color: #ffffff;
+  transform: scale(1.04);
 }
 
 /* ==========================================================================
@@ -352,13 +363,34 @@ ol {
 li {
   font-size: 1.0125rem;
   line-height: 1.65;
-  margin-bottom: 10px;
-  padding-left: 6px;
+  margin-bottom: 8px;
+  padding: 4px 10px 4px 8px;
+  border-radius: var(--radius-sm);
+  transform-origin: left center;
+  transition:
+    color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 li::marker {
   color: var(--accent-warm);
   font-weight: 700;
+  transition: color 0.18s ease;
+}
+
+li:hover {
+  color: var(--text-primary);
+  background-color: var(--accent-soft);
+  transform: scale(1.018);
+}
+
+li:hover::marker {
+  color: var(--accent);
+}
+
+li:hover strong {
+  color: var(--accent-hover);
 }
 
 /* ==========================================================================
